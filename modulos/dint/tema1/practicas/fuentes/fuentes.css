@@ -1,0 +1,38 @@
+.fuente {
+    /* display: flex;
+    flex-direction: row; */
+    font-size: 30px;
+}
+
+.italiano h1 {
+    font-family: 'Italianno', cursive;
+}
+
+.italiano p {
+    font-family: 'Italianno', serif;
+    /* font-weight: bolder; */
+}
+
+.festive h1 {
+    font-family: 'Festive', cursive;
+}
+
+.festive p {
+    font-family: 'Festive', serif;
+}
+
+.qahiri h1 {
+    font-family: 'Qahiri', cursive;
+}
+
+.qahiri p {
+    font-family: 'Qahiri', serif;
+}
+
+.alfa h1 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.alfa p {
+    font-family: 'Alfa Slab One', serif;
+}

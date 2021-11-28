@@ -1,0 +1,14 @@
+.lucida {
+    font-family: Tangerine;
+}
+
+.atras {
+    border: 5px;
+    border-color: brown;
+}
+
+.prueba {
+    /*font-family: 'Inconsolata', serif;*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
