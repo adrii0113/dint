@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: grey;
+    background-color: #222233;
     color: white;
 }
 
@@ -42,6 +42,52 @@ a {
 }
 
 main {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+.menu-entradas {
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    border: 2px solid;
+    margin-top: 8.4vh;
+    text-align: center;
+    background-color: #222233;
+    color: #eeeeee;
+}
+
+.menu-destacados {
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    border: 2px solid;
+    margin-top: 8.4vh;
+}
+
+.tabla-contenidos {
+    text-align: center;
+    padding: 10px
+}
+
+.menu-temas {
+    /* display: flex; */
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.menu-temas>ul {
+    list-style: none;
+}
+
+.menu-temas>ul>li:hover {
+    color: aqua;
+}
+
+.menu-temas>h3 {
     width: 100%;
 }
 
@@ -53,6 +99,7 @@ p {
 
 .titulo-contenido {
     width: 100%;
+    margin-bottom: 20px;
     border-bottom: 3px solid;
 }
 
@@ -64,7 +111,6 @@ p {
 .imagen {
     display: flex;
     justify-content: space-between;
-    background-color: antiquewhite;
 }
 
 .permisos-fpt {
@@ -73,34 +119,47 @@ p {
     display: flex;
     flex-wrap: wrap;
     border: 2px solid;
-    background-color: antiquewhite;
+    background-color: #222233;
     font-weight: bold;
     margin-bottom: 20px;
     padding: 10px;
+    color: #eeeeee;
 }
 
 .tipos-usuarios {
     border: 2px solid;
     margin-bottom: 20px;
-    background-color: antiquewhite;
+    background-color: #222233;
     padding: 10px;
+    color: #eeeeee;
 }
 
 .tipos-ficheros {
     border: 2px solid;
-    background-color: antiquewhite;
+    background-color: #222233;
     padding: 10px;
     margin-bottom: 20px;
+    color: #eeeeee;
 }
 
 .modos-conexion {
     border: 2px solid;
-    background-color: antiquewhite;
+    background-color: #222233;
     padding: 10px;
     margin-bottom: 20px;
+    color: #eeeeee;
 }
 
 .errores-ftp {
+    border: 2px solid;
+    background-color: #eeeeee;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #222233;
+    margin-bottom: 20px;
+}
+
+.directivas-ftp {
     border: 2px solid;
     background-color: antiquewhite;
     padding: 10px;
@@ -124,6 +183,6 @@ p {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: grey;
+    background-color: #222233;
     padding: 20px;
 }

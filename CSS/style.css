@@ -40,18 +40,19 @@ section {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: bisque;
+    background-color: #222233;
     padding: 20px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: bisque;
+    background-color: #222233;
     padding: 20px;
+    color: #eeeeee;
 }
 
-.titulo {}
+h .titulo {}
 
 .menu li {
     display: inline;

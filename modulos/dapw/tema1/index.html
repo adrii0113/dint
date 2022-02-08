@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arquitectura web</title>
+    <title>Arquitectura Web</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -44,18 +44,120 @@
         </nav>
 
     </header>
-
     <div class="main-container">
         <main>
             <section class="contenido">
                 <div class="titulo-contenido">
                     <h1 class="page-header">Arquitectura web</h1>
                 </div>
-                <div class="coceptos-iniciales">
-                    <h3>¿Ques la arquitectura web?</h3>
-                    <p>Definimos la arquitectura tradicional como «Técnica y estilo con los que se diseña, proyecta y construye un edificio o un monumento». Esto nos da pistas acerca de lo que se entiende por qué es la arquitectura web.</p>
-                    <h3>¿Por que es importante la arquitectura web?</h3>
-                    <p>La arquitectura web es muy importante ya que se utiliza para realizar el diseño logico de la pagina web, de acuerdo a unos requisitos que pueden variar en función del objetivo que se persiga.</p>
+                <div class="conceptos-iniciales">
+                    <a href="./actividades/Tarea_Adrian_Calleja.docx">Descargar actividad de clase</a>
+                    <h3>¿Que es una arquitectura web?</h3>
+                    <p>La Arquitectura Web es la jerarquización de la información en un sitio web. Así como en la arquitectura tradicional se trabaja la estructura de una construcción (sea casa, edificio o salón), la arquitectura web trabaja la estructura
+                        de una página web y las categorías que la conforman para su optimización de cara al posicionamiento en buscadores.</p>
+                    <h3>Definicion de World Wide Web</h3>
+                    <p>conjunto de recursos SW y HW interconectados que conforman el conocimiento, el ocio y los negocios humanos actuales. Para que exista se ponen en juego: hubs, puentes, pasarelas, encaminadores, protocolos de comunicaciones, sistema
+                        de nombres de dominio (DNS), y un largo etc.</p>
+
+                </div>
+                <div class="cliente-servidor">
+                    <h3>Arquitectura cliente servidor</h3>
+                    <p>Esta arquitectura consiste básicamente en un cliente que realiza peticiones a otro programa (el servidor) que le da respuesta. Aunque esta idea se puede aplicar a programas que se ejecutan sobre una sola computadora es más ventajosa
+                        en un sistema operativo multiusuario distribuido a través de una red de computadoras. La interacción cliente-servidor es el soporte de la mayor parte de la comunicación por redes. Ayuda a comprender las bases sobre las que están
+                        construidos los algoritmos distribuidos. Ejemplos de servidore ftp: proftp,vsftp y filezilla. Ejemplos de clientes: navegador, cliente modo texto(ftp), cliente grafico(filezilla, winstp, cyberduck).
+                    </p>
+                    <h4>Capas de la arquitectura cliente servidor</h4>
+                    <ul>
+                        <li>Presentacion y servicio</li>
+                        <li>Modelo vista controlador</li>
+                        <li>Otros</li>
+                    </ul>
+                    <h4>Venatjas y desventajas de la arquitectura cliente servidor</h4>
+                    <div class="ventajas-desventajas">
+                        <div>
+                            <h4>Ventajas</h4>
+                            <p>Al favorecer el uso de las interfaz de gráficas interactivas, los sistemas construidos bajo este esquema tienen una mayor interacción con el usuario</p>
+                            <p>La estructura modular facilita de más la integración de nuevas tecnologías y el crecimiento de la infraestructura computacional favoreciendo así la estabilidad de las soluciones</p>
+
+                        </div>
+                        <div>
+                            <h4>Desventajas</h4>
+                            <p>Requiere habilidad para que un servidor sea reparado. Por ejemplo si un problema ocurre en la red, se requiere de alguien con un amplio de esta para poder repararla en su totalidad para así dejar que la información y el correcto
+                                funcionamiento siga su flujo.</p>
+                            <p>Otro problema es la seguridad, el hecho que se comparte canales de información entre servidores y clientes requieren que estas pasen por procesos de validación, es decir protocolos de seguridad que pueden tener algún tipo de
+                                puerta abierta permitiendo que se generen daños físicos, amenazas o ataques de malware</p>
+                        </div>
+                    </div>
+
+                    <div class="componentes-cliente-servidor">
+                        <h3>Componentes de del modelo cliente servidor</h3>
+                        <h4>Red</h4>
+                        <p>Una red es un conjunto de clientes, servidores y base de datos unidos de una manera física o no física en el que existen protocolos de transmisión de información establecidos.</p>
+                        <h4>Cliente</h4>
+                        <p>El concepto de cliente hace referencia a un demandante de servicios, este cliente puede ser un ordenador como también una aplicación de informática, la cual requiere información proveniente de la red para funcionar.</p>
+                        <h4>Servidor</h4>
+                        <p>Un servidor hace referencia a un proveedor de servicios, este servidor a su vez puede ser un ordenador o una aplicación informática la cual envía información a los demás agentes de la red</p>
+                        <h4>Protocolo</h4>
+                        <p>Un protocolo es un conjunto de normas o reglas y pasos establecidos de manera clara y concreta sobre el flujo de información en una red estructurada.</p>
+                        <h4>Servicios</h4>
+                        <p>Un servicio es un conjunto de información que busca responder las necesidades de un cliente, donde esta información pueden ser mail, música, mensajes simples entre software, videos, etc.</p>
+                        <h4>Base de datos</h4>
+                        <p>Son bancos de información ordenada, categorizada y clasificada que forman parte de la red, que son sitios de almacenaje para la utilización de los servidores y también directamente de los clientes.</p>
+                    </div>
+
+                </div>
+                <div class="cloud">
+                    <h4>Cloud Computing</h4>
+                    <p>SaaS: aplicacionesa que no requieren de instalacion completa en el equipo del usuario imprescindible utilizar cliente para poder utilizarlas ejemplo. twitter facebook... Destinado a usuarios finales</p>
+                    <p>PaaS: plataformas de desarrollo ofrecidas como servicio online integran todos los elementos necesarios para el desarrollo de aplicaciones. ejemplo: google app engine, heroku, openshift. los usuario de estos servicios pueden desarrollar
+                        ejecutar y administrar app sin preocuparles la infraestructura que habrá por debajo.</p>
+                    <p>IaaS: servicios online que permiten virtualizar el HW y sistemas utilizados para montar plataformas en ellas. Ofrecen recursos fisicos y virtuales encargandose de proporcionar el HW necesario. ejemplos: Amazon web services, Azure,
+                        Open Stack.</p>
+                    <p>CaaS: conceptos mas modernos en cloud computing ubucado entre la infraestructura y la plataforma. Se utiliza para ofrecer contendores a demanda, estos nos ofrecen parte de la infraestructura y parte de la plataforma. ejemplo. Docker</p>
+                    <p>FaaS: permite la ejecución de aplicaciones a través de contenedores efímeros. Dichos contenedores se crean en el momento, de manera que el desarrollador no se ha de preocupar de la gestión de la infraestructura sobre la que se ejecuta
+                        su función, centrándose, por tanto, en la funcionalidad. ejemplo. AWS Lambda, Google Cloud Functions, OpenFaaS.</p>
+
+                </div>
+
+                <div class="servidor-web">
+                    <h4>Servidor web</h4>
+                    <p>El servidor web es el software especializado en la gestion de peticiones http</p>
+                    <p>-Seguridad: (acceso, estructura, cifrado) -Host virtuales: diferentes paginas/ sitios alojados en le servidor web. -Modularización: -Monitorización:
+                    </p>
+                    <p>ejemplos: caddy, litespeed, ngin http server.</p>
+
+
+                </div>
+
+                <div class="directivas">
+                    <h3>Directivas de un servidor web</h3>
+                    <p>ServerRoot: ubicar el directorio raiz de instalacion.</p>
+                    <p>Timeout: tiempo máximo permitido antes de cerrar una conexion con el cliente.</p>
+                    <p>KeepAlive: si las conexiones son persistentes o no.</p>
+                    <p>MaxKeepAliveRequest: fijar el numero maximo de peticiones para las conexiones persistentes.</p>
+                    <p>HostnameLookups: indicar el servidor DNS.</p>
+                    <p>Include: incluir ficheros externos.</p>
+                    <p>ServerName: especifica el nombre y el puerto que el servidor utiliza para identificarse.</p>
+                    <p>ServerAdmin: especifica la dirección de correo electrónico del administrador</p>
+                    <p>LogLevel: especifica el tipo de mensajes que se guardarán en el fichero de registro de errores.</p>
+                    <p>AccessFileName: es el nombre del fichero de configuracion de acceso limitado que se buscará en cada uno de los directorios del servidor para conocer la configuracion del mismo.</p>
+                    <p>IncludeOptional: permitir la inclusión de otros archivos de configuración adicionales si el o los archivos indicados están disponibles.</p>
+                </div>
+
+                <div class="tipos-ficheros">
+
+                </div>
+
+                <div class="modos-conexion">
+
+                </div>
+
+                <div class="errores-ftp">
+
+                </div>
+
+                <div class="directivas-ftp">
+
                 </div>
             </section>
         </main>
@@ -64,9 +166,41 @@
 
 
     <footer>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <div>
+            <h3>ADRIAN</h3>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="./../tema1/index.html">Arquitectura Web</a>
+                </li>
+                <li>
+                    <a href="">Servidores de ficheros</a>
+                </li>
+                <li>
+                    <a href="">Herramientas colaborativas</a>
+                </li>
+                <li>
+                    <a href="">Documentacion</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="">Diseño de interfaces web</a>
+                </li>
+                <li>
+                    <a href="">Despliegue de aplicaciones web</a>
+                </li>
+                <li>
+                    <a href="">Desarrollo servidor</a>
+                </li>
+                <li>
+                    <a href="">Desarrollo cliente</a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 
