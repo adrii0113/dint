@@ -35,13 +35,7 @@ section img {
 
 section {
     width: 100%;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #222233;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
@@ -52,10 +46,71 @@ header {
     color: #eeeeee;
 }
 
-h .titulo {}
+header a {
+    color: #eeeeee;
+}
+
+header i {
+    font-size: 50px;
+}
 
 .menu li {
     display: inline;
 }
 
-.logo {}
+.fas.fa-bars {
+    display: none;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222233;
+    padding: 20px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer a {
+    color: #eeeeee;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+    section {
+        width: 50%;
+    }
+    main {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .fas.fa-bars {
+        display: contents;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+    main {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .fas.fa-bars {
+        display: contents;
+    }
+}
