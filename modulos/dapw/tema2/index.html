@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviodores de ficheros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo"><a href="index.html">Adrian</a></h2>
+        <div class="titulo">
+            <h2 class="brand">
+                DESPLIEGUE DE APLIACIONES WEB
+            </h2>
+
+        </div>
+        <nav class="menu">
+
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Temas</a>
+
+                    <ul>
+                        <li><a href="tema1/tema1.html">Arquitectura Web</a></li>
+                        <li><a href="">Servidores de ficheros</a></li>
+                        <li><a href="#">Herramientas colaborativas</a></li>
+                        <li><a href="#">Documentacion</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="#">Sobre mi</a></li>
+
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <div class="btn">
+                <i class="fas fa-bars menu-btn"></i>
+            </div>
+        </nav>
+
+    </header>
+    <div class="main-container">
+        <main>
+            <section class="contenido">
+                <div class="titulo-contenido">
+                    <h1 class="page-header">Servidores de ficheros</h1>
+                </div>
+                <div class="coceptos-iniciales">
+                    <h3>¿Ques son los servidores de ficheros?</h3>
+                    <p>Un file server (o servidor de archivos) es un servidor central de una red de ordenadores, que pone a disposición del cliente conectado un conjunto de archivos o parte del mismo. De este modo, el servidor de archivos proporciona a los
+                        usuarios un lugar de almacenamiento centralizado para los archivos en sus propios soportes de datos, disponible para todos los clientes autorizados. El administrador del servidor establece unas directrices estrictas para determinar
+                        qué usuarios tienen derechos de acceso y a qué datos: por ejemplo, configurando el sistema u otorgando los permisos del sistema de archivos, se puede determinar qué carpetas puede ver y abrir un usuario o grupo de usuarios concreto
+                        y si los archivos solo son visibles o también pueden guardarse, modificarse o eliminarse.</p>
+
+                </div>
+                <div class="ftp">
+                    <h3>Servidor FTP</h3>
+                    <p>Servicio orientado a conexion, se creo en las decada de lo s70' utiliza los puerto 20 y 21 por defecto sobre tcp, el 20 para datos y 21 para control. nos permite realizar intercambio de archivos de forma independiente de los so, da
+                        igual el so, estariamos trabajando con una arquitectura cliente servidor y no tiene segurirdad pero podemos añadirla con certiicados. El servicio cuenta tanto con parte cliente como con parte servidor, en la parte de cliente podemos
+                        encontrar FileZilla y en la parte servidor FileZilla Server. Ejemplos de servidores FTP:
+                        <div class="imagen">
+                            <img src="img/vsftpd.jpg" alt="vsftpd">
+                            <img src="img/filezilla.png" alt="vsftpd">
+                            <img src="img/filezillaserver.png" alt="vsftpd">
+                        </div>
+
+                        Ejemplos de servidore ftp: proftp,vsftp y filezilla. Ejemplos de clientes: navegador, cliente modo texto(ftp), cliente grafico(filezilla, winstp, cyberduck).
+                    </p>
+
+                </div>
+                <div class="permisos-directorios">
+                    <h3>Permisos en FTP</h3>
+                    <p>Dentro de los permisos de FTP podemos encontrar tres niveles de acceso:</p>
+                    <p>Nivel de acceso R: nos permite listar el contenido del directorio actual</p>
+                    <p>Nivel de acceso w: nos permite escribir en el contenido del fichero actual</p>
+                    <p>Nivel de acceso x: nos permite ejecutar</p>
+                </div>
+
+                <div class="permisos-fpt">
+                    <h4>Permisos del lado del cliente</h4>
+                    <div>
+                        <p>Open &lt;IP&gt;: abre la conexión</p>
+                        <p>user &lt;usuario&gt;: solicita un usuario para utenticar</p>
+                        <p>bye/exit/quit: salir</p>
+                        <p>close: cerrar conexión sin salir</p>
+                        <p>mkdir: crear carpeta en destino (si tenemos permisos)</p>
+                        <p>!mkdir: crear carpeta en origen (si tenemos permisos)</p>
+                        <p>get &lt;archivo&gt;: solicita archivo remoto</p>
+                        <p>put &lt;archivo&gt;: transfiere un archivo al servidor remoto</p>
+                    </div>
+                    <div>
+                        <p>user &lt;usuario&gt;: solicita un usuario para utenticar</p>
+                        <p>pwd: ruta destino actua</p>
+                        <p>!pwd: ruta origen actual</p>
+                        <p>ls: directorio destino actual</p>
+                        <p>!ls: directorio origen actua</p>
+                        <p>rmdir: eliminar carpeta en destino (si tenemos permisos)</p>
+                        <p>!rmdir: eliminar carpeta en origen (si tenemos permisos)</p>
+                        <p>mget &lt;archivo&gt;: recupera la lista (con patron) de archivos remotos</p>
+                    </div>
+
+                </div>
+
+                <div class="tipos-usuarios">
+                    <h3>Tipos de usuarios en un servidor FTP</h3>
+                    <p>Exixsten tres tipos de usuarios en un servidor FTP: los anonimos, los autenticados y los virtuales</p>
+                    <h4>Usuarios anonimos:</h4>
+                    <p>Los anonimos usan como nombre anonymous, siempre acceden con permisos limitados, como pass utilizan un email,y si permitimos este tipo de user tenemos que tener en cuneta la posible brecha de segurirdad asociad. Los utilizaremos cuando
+                        quereamos exponer al publico ciertos ficheros.</p>
+                    <h4>Usuarios autenticados</h4>
+                    <p>Los autenticados o usuarios del sistema: estan creados en el propio s.o y tienen nombre y pass propios</p>
+                    <h4>Usuarios virtuales</h4>
+                    <p>son creados exclusivamente para servicios FTP, son el tipo de user que crea menor brecha de seguridad.La validacion del par username y pass puede realizarse mediante ficheros, bases de datos o servicios de directorios(ldap).</p>
+                </div>
+
+                <div class="tipos-ficheros">
+                    <h3>Tipos de ficheros en un servidor FTP</h3>
+                    <p>Existen varios tipos de ficheros: los binarios y de texto</p>
+
+
+                    <h4>Ficheros binarios:</h4>
+                    <p>No contienen caracteres legibles por humanos</p>
+                    <h4>Ficheros de texto:</h4>
+                    <p>Conrtienen caracteres legibles por humanos</p>
+                </div>
+
+                <div class="modos-conexion">
+                    <h3>Modos de conexion en un servidor FTP</h3>
+                    <p>Hay dos tipos de modos de conexion, el modo activo y el modo pasivo</p>
+                    <h4>Modo activo:</h4>
+                    <p></p>es el modo por defecto, en este modo el servidor abre los puertos 20 para datos y 21 para control, el cliente hace lo mismo pero con puertos superiores a 1024. si vamos a subir al server la conexion la inicia el cliente, si vamos
+                    a descaragr un fichero del server la concexion la inicia el servidor.
+                    <h4>Modo pasivo:</h4>
+                    <p>es el cliente el que siempre inicia las conexiones, tato la de dato como la de control. Nos evita problemas si existen cortafuegos entre medias.
+                    </p>
+                </div>
+
+                <div class="errores-ftp">
+                    <h3>Errores en un servidor FTP</h3>
+                    <p>Dependiendo del patron numerico del error puede significar una cosa u otra</p>
+                    <h4>22x --> conexion correcta</h4>
+                    <h4>120 --> El servidor lee en x minutos</h4>
+                    <h4>331 --> Nombre de usuario correcto, necesita una contraseña</h4>
+                    <h4>550 --> Solicitud de información no aceptada. Las filas no están disponibles (ej.: filas incorrectas).</h4>
+                    <h4>22x --> conexion correcta</h4>
+                </div>
+
+                <div class="directivas-ftp">
+                    <h3>Directivas FTP</h3>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+    <footer>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </footer>
+</body>
+
+</html>
