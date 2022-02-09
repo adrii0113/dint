@@ -35,7 +35,7 @@ section img {
 
 section {
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 header {
@@ -59,6 +59,13 @@ header i {
 }
 
 .fas.fa-bars {
+    display: none;
+}
+
+
+/* MENU RESPONSIVE */
+
+.respmenu {
     display: none;
 }
 
@@ -96,6 +103,9 @@ footer a {
     }
     .fas.fa-bars {
         display: contents;
+    }
+    main>.tema5 {
+        align-items: center;
     }
 }
 

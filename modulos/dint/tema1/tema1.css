@@ -1,14 +1,255 @@
-.lucida {
-    font-family: Tangerine;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.atras {
-    border: 5px;
-    border-color: brown;
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222233;
+    padding: 20px;
+    color: #eeeeee;
+}
+
+header a {
+    color: #eeeeee;
+}
+
+header i {
+    font-size: 50px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.fas.fa-bars {
+    display: none;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    max-width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+
+/* SECTIONS */
+
+section {}
+
+
+/* ASIDE */
+
+aside {
+    border: 1px solid;
+    width: 30%;
+}
+
+
+/* ESTILOS PRACTICAS */
+
+.practica {
+    border: 1px solid;
+    width: 69%;
+}
+
+.practica-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.practica-container h2 {
+    width: 100%;
+}
+
+.practica-container div {
+    border: 1px solid;
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.practica-container div:hover {
+    background-color: #222233;
+    color: #eeeeee;
+}
+
+
+/* FIN ESTILOS PRACTICAS */
+
+
+/* ESTILOS TEORIA */
+
+.teoria {
+    border: 1px solid;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+
+.teoria-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.teoria-container h2 {
+    width: 100%;
+}
+
+.teoria-container div {
+    border: 1px solid;
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.teoria-container div:hover {
+    background-color: #222233;
+    color: #eeeeee;
+}
+
+
+/* FIN ESTILOS TEORIA */
+
+.herramientas-interes {
+    border: 1px solid;
+}
+
+.herramientas-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.herramientas-container h2 {
+    width: 100%;
+}
+
+.herramientas-container div {
+    border: 1px solid;
+    width: 40%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.herramientas-container div:hover {
+    background-color: #222233;
+    color: #eeeeee;
+}
+
+
+/* ESTILOS HERRAMIENTAS DE INTERES */
+
+.herramientas {
+    border: 5px solid;
+}
+
+
+/* FIN HERRAMIENTAS DE INTERES  */
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222233;
+    padding: 20px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer a {
+    color: #eeeeee;
+}
+
+.lucida {
+    font-family: Tangerine;
 }
 
 .prueba {
     /*font-family: 'Inconsolata', serif;*/
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
+}
+
+
+/* MENU RESPONSIVE */
+
+.respmenu {
+    display: none;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+    section {
+        width: 50%;
+    }
+    main {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .fas.fa-bars {
+        display: contents;
+        font-size: 32px;
+    }
+    main>.tema5 {
+        align-items: center;
+    }
+    .titulo {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+    main {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .fas.fa-bars {
+        display: contents;
+    }
 }
