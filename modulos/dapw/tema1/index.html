@@ -46,12 +46,58 @@
     </header>
     <div class="main-container">
         <main>
+            <section class="menu-entradas">
+                <div class="menu-temas">
+                    <h3>Seleccion de temas</h3>
+                    <ul>
+                        <li>Aruiqtectura web
+                            <ul>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            Servidores de ficheros
+                            <ul>
+                                <li>
+                                    <a href="#ftp">Ftp</a>
+                                </li>
+                                <li>
+                                    <a href="#permisos-directorios">Permisos de directorios</a>
+                                </li>
+                                <li>
+                                    <a href="#permisos-ftp">Permisos de ftp</a>
+                                </li>
+                                <li>
+                                    <a href="#usuarios">Usuarios de ftp</a>
+                                </li>
+                                <li>
+                                    <a href="#ficheros">Ficheros de ftp</a>
+                                </li>
+                                <li>
+                                    <a href="#conceptos-iniciales">Conceptos iniciales</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            Herramientas colaborativas
+                        </li>
+
+
+                        <li>Documentacion</li>
+
+
+
+                    </ul>
+                </div>
+            </section>
             <section class="contenido">
                 <div class="titulo-contenido">
                     <h1 class="page-header">Arquitectura web</h1>
                 </div>
                 <div class="conceptos-iniciales">
-                    <a href="./actividades/Tarea_Adrian_Calleja.docx">Descargar actividad de clase</a>
+
                     <h3>¿Que es una arquitectura web?</h3>
                     <p>La Arquitectura Web es la jerarquización de la información en un sitio web. Así como en la arquitectura tradicional se trabaja la estructura de una construcción (sea casa, edificio o salón), la arquitectura web trabaja la estructura
                         de una página web y las categorías que la conforman para su optimización de cara al posicionamiento en buscadores.</p>
@@ -129,6 +175,20 @@
 
                 </div>
 
+                <div class="apache">
+                    <h4>Servidor web(apache)</h4>
+                    <p>Comandos para la instalacion de apache en debian:</p>
+                    <p>sudo apt-get install apache2</p>
+                    <h5>Comandos utiles a la hora de utilizar el servidro web</h5>
+                    <p>service apache2 status: saber el estado del servidor.</p>
+                    <p>service apache2 start: si queremos arrancarlo.</p>
+                    <p>service apache2 restart: si queremos reiniciarlo.</p>
+                    <p>ps –aux | grep “apache2”: conocer si entre los procesos que están ejecución están asociados a apache2</p>
+                    <p>nmap -st -O localhost: escanear los puertos y saber si en un host en concreto tengo los puertos abierto o cerrados</p>
+                    <p>a2ensite</p>
+                    <p>a2dissite</p>
+                </div>
+
                 <div class="directivas">
                     <h3>Directivas de un servidor web</h3>
                     <p>ServerRoot: ubicar el directorio raiz de instalacion.</p>
@@ -144,12 +204,26 @@
                     <p>IncludeOptional: permitir la inclusión de otros archivos de configuración adicionales si el o los archivos indicados están disponibles.</p>
                 </div>
 
-                <div class="tipos-ficheros">
-
+                <div class="creacion-sitio-apache">
+                    <h3>Pasos para crear un nuevo sitio web en apache</h3>
+                    <p>Primero hay que crear una nueva carpeta en home/kali/web/www una vez creado, tenemos que copiar el index y pegarlo dentro de la carpeta.</p>
+                    <p>ahora nos vamos al fichero de apache2.conf que está en la ruta /etc/apache2 y abajo del todo en los directorios añadimos la ruta del nuevo index que hemos creado</p>
+                    <p>Una vez hecho dentro de sites_aviables copiamos el archivo 000-default.conf y la pegamos en la misma carpeta cambiándola el nombre, una vez cambiado entramos en el nuevo archivo y le cambiamos la ruta (escucha).</p>
+                    <p>Antes de resetear el servidor añadimos la nueva escucha en ports.conf añadimos línea lisent (puerto) para crear otro puerto, está en la ruta /etc/apache2/ports.conf</p>
+                    <p>Una vez hecho todo eso reseteamos el servidor en el terminal y en el explorador probamos el nuevo puerto, por ejemplo: localhost:8080</p>
                 </div>
 
-                <div class="modos-conexion">
+                <div class="nginx">
+                    <h3>Servidor web(nginx)</h3>
+                    <h5>Comandos de nginx</h5>
+                    <p>start nginx: para arrancarlo.</p>
+                    <p>nginx –s stop o quit: para parar el servidor</p>
 
+                    <h4>Carpetas importantes:</h4>
+                    <p>Dentro de la carpeta config podemos encontrar el archivo mime.types y el fichero nginx.conf:se indica operaciones similares a las de apache, dentro de este fichero podemos configurar diferentes errores de páginas, habilitar el https
+                        localizaciones, etc</p>
+                    <p>En la carpeta html se encunetran los ficheros html, ya sean los index o las distintas paginas que tenga el servidor</p>
+                    <p>Dentro de la carpeta logs podemos encontrara los detalles de error</p>
                 </div>
 
                 <div class="errores-ftp">
@@ -158,6 +232,12 @@
 
                 <div class="directivas-ftp">
 
+                </div>
+            </section>
+            <section class="menu-destacados">
+                <div class="tabla-contenidos">
+                    <h3>Activides</h3>
+                    <a href="./actividades/Tarea_Adrian_Calleja.docx">Descargar actividad de clase</a>
                 </div>
             </section>
         </main>

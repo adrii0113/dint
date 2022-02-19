@@ -1,0 +1,231 @@
+//archivos sccss
+@import "variables";
+@import "_colores.scss";
+@import "fuentes";
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $secundary-color;
+}
+
+.main-container {
+    background-color: $secundary-color;
+}
+
+// Div de presentacion del repositorio
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 3rem;
+}
+
+// Encabezados prsentacion
+.presentacion h1,
+.presentacion h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.presentacion p {
+    margin-top: 1rem;
+}
+
+// main
+body main {
+    flex: 1 0 auto;
+}
+
+main {
+    max-width: 70rem;
+    color: $secundary-color;
+    background-color: $azulMedio;
+    width: 100%;
+    margin: auto;
+}
+
+main p {
+    max-width: 70ch;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    line-height: 1.5;
+    color: $secundary-color;
+}
+
+// temario
+.temario {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.tema1 {
+    background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
+    width: auto;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.tema2 {
+    background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
+    width: auto;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.tema3 {
+    background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
+    width: auto;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.tema4 {
+    background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
+    width: auto;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.tema5 {
+    background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
+    width: auto;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    width: 100%;
+    background-color: $primary-color;
+    box-shadow: 0 0 15px rgba(24, 24, 24, 0.438);
+    color: $secundary-color;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    color: $secundary-color;
+}
+
+// icono
+header i {
+    font-size: 50px;
+}
+
+.fas.fa-bars {
+    display: none;
+}
+
+header .header_container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-width: 70rem;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+header .logo {}
+
+// header nav {
+//     flex: 1;
+//     display: flex;
+//     justify-content: flex-end;
+//     margin: 0.7rem 0;
+// }
+.menu li {
+    display: inline;
+}
+
+//fuente para encabezados
+h1,
+h2 {
+    font-family: $titulos;
+    margin-bottom: 0.3em;
+}
+
+//fuente de los parrafos y los enlaces
+p,
+a {
+    font-family: $parrafos;
+}
+
+// footer
+footer {
+    width: 100%;
+    background-color: $primary-color;
+    color: white;
+}
+
+body footer {
+    flex-shrink: 0;
+}
+
+footer .footer_container {
+    width: 100%;
+    max-width: 70rem;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 0.3em;
+}
+
+footer .footer_container p {
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+    section {
+        width: 50%;
+    }
+    main {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .fas.fa-bars {
+        display: contents;
+    }
+    main>.tema5 {
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+    main {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .fas.fa-bars {
+        display: contents;
+    }
+}

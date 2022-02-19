@@ -10,12 +10,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: burlywood;
+    background-color: #222233;
     color: white;
 }
 
 a {
-    color: brown;
+    color: white;
 }
 
 .menu ul {
@@ -42,13 +42,59 @@ a {
 }
 
 main {
+    display: flex;
+    max-width: 100%;
     width: 100%;
+    background-color: #eeeeee;
+}
+
+.menu-entradas {
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    border: 2px solid;
+    margin-top: 8.4vh;
+    text-align: center;
+    background-color: #222233;
+    color: #eeeeee;
+}
+
+.menu-destacados {
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    border: 2px solid;
+    margin-top: 8.4vh;
 }
 
 p {
     /* padding-bottom: 10px; */
     margin: 10px;
     font-family: 'Roboto Mono', monospace;
+}
+
+.tabla-contenidos {
+    text-align: center;
+    padding: 10px
+}
+
+.menu-temas {
+    /* display: flex; */
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.menu-temas>ul {
+    list-style: none;
+}
+
+.menu-temas>ul>li:hover {
+    color: aqua;
+}
+
+.menu-temas>h3 {
+    width: 100%;
 }
 
 .titulo-contenido {
@@ -62,12 +108,16 @@ p {
 }
 
 .ventajas-desventajas {
+    display: -ms-flex;
+    display: -webkit-flex;
     display: flex;
+    flex-wrap: wrap;
     border: 2px solid;
-    background-color: antiquewhite;
+    background-color: #222233;
+    font-weight: bold;
+    margin-bottom: 20px;
     padding: 10px;
-    margin-bottom: 20px;
-    margin-bottom: 20px;
+    color: #eeeeee;
 }
 
 .ventajas-desventajas>div {
@@ -87,12 +137,7 @@ p {
     padding: 10px;
 }
 
-.cloud {
-    border: 2px solid;
-    margin-bottom: 20px;
-    background-color: antiquewhite;
-    padding: 10px;
-}
+.cloud {}
 
 .servidor-web,
 .conceptos-iniciales,
@@ -100,26 +145,26 @@ p {
 .componentes-cliente-servidor,
 .directivas {
     border: 2px solid;
-    background-color: antiquewhite;
+    background-color: #222233;
     padding: 10px;
     margin-bottom: 20px;
-    margin-bottom: 20px;
+    color: #eeeeee;
 }
 
 .cliente-servidor {
     border: 2px solid;
-    background-color: burlywood;
+    background-color: #222233;
     padding: 10px;
     margin-bottom: 20px;
-    margin-bottom: 20px;
+    color: #eeeeee;
 }
 
 .errores-ftp {
     border: 2px solid;
-    background-color: antiquewhite;
+    background-color: #222233;
     padding: 10px;
     margin-bottom: 20px;
-    margin-bottom: 20px;
+    color: #eeeeee;
 }
 
 .directivas-ftp {
@@ -146,6 +191,6 @@ p {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: burlywood;
+    background-color: #222233;
     padding: 20px;
 }
