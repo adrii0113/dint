@@ -289,8 +289,19 @@ footer .footer_container p {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
-    .practicas {
-        // justify-content: flex-start;
+    .enlaces_interes {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .enlaces_interes .box {
+        width: 45%;
+    }
+    .teoria {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .teoria .box {
+        width: 45%;
     }
     main {
         -ms-flex-wrap: wrap;
@@ -311,15 +322,12 @@ footer .footer_container p {
     .practicas .box {
         width: 100%;
     }
-    // .practicas {
-    //     width: 100%;
-    //     -ms-flex-wrap: wrap;
-    //     flex-wrap: wrap;
-    // }
-    // main {
-    //     -ms-flex-wrap: wrap;
-    //     flex-wrap: wrap;
-    // }
+    .enlaces_interes .box {
+        width: 100%;
+    }
+    .teoria .box {
+        width: 100%;
+    }
     .fas.fa-bars {
         display: contents;
     }

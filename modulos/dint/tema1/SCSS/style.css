@@ -338,6 +338,20 @@ footer .footer_container p {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  .enlaces_interes {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .enlaces_interes .box {
+    width: 45%;
+  }
+  .teoria {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .teoria .box {
+    width: 45%;
+  }
   main {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -357,6 +371,12 @@ footer .footer_container p {
     display: none;
   }
   .practicas .box {
+    width: 100%;
+  }
+  .enlaces_interes .box {
+    width: 100%;
+  }
+  .teoria .box {
     width: 100%;
   }
   .fas.fa-bars {
