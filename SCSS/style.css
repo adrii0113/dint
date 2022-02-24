@@ -322,6 +322,11 @@ footer .footer_container p {
   font-size: 1em;
 }
 
+.responsive {
+  display: none;
+  background-color: #222233;
+}
+
 /* MEDIA */
 @media (max-width: 800px) {
   nav ul {
