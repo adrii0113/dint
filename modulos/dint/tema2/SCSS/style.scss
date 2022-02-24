@@ -1,0 +1,325 @@
+@import "../../../../SCSS/colores";
+@import "../../../../SCSS/fuentes";
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// header {
+//     display: flex;
+//     justify-content: center;
+//     background-color: #222233;
+//     padding: 20px;
+//     color: #eeeeee;
+// }
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    width: 100%;
+    background-color: $primary-color;
+    box-shadow: 0 0 15px rgba(24, 24, 24, 0.438);
+    color: $secundary-color;
+    margin: 0;
+    // padding: 0;
+}
+
+header a {
+    color: #eeeeee;
+}
+
+header i {
+    font-size: 50px;
+}
+
+header .header_container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-width: 70rem;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.header-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-width: 70rem;
+    width: 100%;
+    padding: 0.3rem var(--margen);
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.7rem 0;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+ul#ejm2 li a {
+    position: relative;
+    font-weight: bold;
+    color: $secundary-color;
+    margin: 0px 15px;
+}
+
+ul#ejm2 li a:after {
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: $azulMedio;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(20px);
+}
+
+ul#ejm2 li a:hover:after {
+    opacity: 1;
+    transform: translateY(15px)
+}
+
+.fas.fa-bars {
+    display: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $secundary-color;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 3rem;
+}
+
+.presentacion h1,
+.presentacion h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.presentacion p {
+    margin-top: 1rem;
+}
+
+.box {
+    border: 2px solid;
+    width: 100%;
+    margin: 0.35rem;
+}
+
+.practicas img {
+    width: 100%;
+}
+
+.enlaces_interes img {
+    width: 100%;
+}
+
+.teoria img {
+    width: 100%;
+}
+
+.practicas .box {
+    width: 20%;
+}
+
+.teoria .box {
+    width: 20%;
+}
+
+.enlaces_interes .box {
+    width: 20%;
+}
+
+.titulo_practica {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo_teoria {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo_enlaces_interes {
+    width: 100%;
+    text-align: center;
+}
+
+.practicas {}
+
+.practicas img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.enlaces_interes img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.teoria img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body main {
+    flex: 1 0 auto;
+}
+
+main {
+    max-width: 70rem;
+    color: $secundary-color;
+    background-color: $azulMedio;
+    width: 100%;
+    margin: auto;
+}
+
+main p {
+    max-width: 70ch;
+    // font-size: clamp(1rem, 1.2vw, 1.2rem);
+    line-height: 1.5;
+    color: $secundary-color;
+}
+
+.main-container {
+    background-color: $secundary-color;
+}
+
+// temario
+.practicas {
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.enlaces_interes {
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teoria {
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+//fuente para encabezados
+h1,
+h2 {
+    font-family: $titulos;
+    margin-bottom: 0.3em;
+}
+
+//fuente de los parrafos y los enlaces
+p,
+a {
+    font-family: $parrafos;
+}
+
+// footer
+footer {
+    width: 100%;
+    background-color: $primary-color;
+    color: white;
+}
+
+body footer {
+    flex-shrink: 0;
+}
+
+footer .footer_container {
+    width: 100%;
+    max-width: 70rem;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 0.3em;
+}
+
+footer .footer_container p {
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+    .practicas .box {
+        width: 45%;
+    }
+    .practicas {
+        // width: 100%;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .practicas {
+        // justify-content: flex-start;
+    }
+    main {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .fas.fa-bars {
+        display: contents;
+    }
+    main>.tema5 {
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    .practicas .box {
+        width: 100%;
+    }
+    // .practicas {
+    //     width: 100%;
+    //     -ms-flex-wrap: wrap;
+    //     flex-wrap: wrap;
+    // }
+    // main {
+    //     -ms-flex-wrap: wrap;
+    //     flex-wrap: wrap;
+    // }
+    .fas.fa-bars {
+        display: contents;
+    }
+}

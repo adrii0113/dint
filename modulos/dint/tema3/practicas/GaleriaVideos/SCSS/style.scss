@@ -1,73 +1,86 @@
 @import "variables";
 * {
-    box-sizing: border-box;
-}
-
-body {
     margin: 0;
-    padding: 0;
-    background-color: $body-color;
 }
 
-header {
-    background-color: $primary-color;
-    display: flex;
-}
-
-main {
-    background-color: $secondary-color;
-}
-
-.logo {
-    width: 40%;
-}
-
-.title {
-    width: 50%;
-}
-
-.menu {
-    margin-right: 20px;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    color: white;
-}
-
-.row {
-    display: flex;
-    padding: 5px;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 25%;
-    padding: 3px;
-}
-
-.column img {
-    width: 100%;
-    margin-top: 3px;
-}
-
+header,
 footer {
+    background-color: $primaryColor;
     display: flex;
-    background-color: $primary-color;
     justify-content: space-between;
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-    }
-    header ul {
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+main {
+    // background-color: $secundaryColor;
+    display: flex;
+    max-width: 100%;
+    padding: 6px;
+}
+
+section {
+    width: 25%;
+    // padding: 5px;
+}
+
+video {
+    width: 100%;
+    max-width: 100%;
+}
+
+nav ul li a {
+    color: $secundaryColor;
+}
+
+nav ul li a:hover {
+    background-color: $color4;
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+footer {
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    nav ul li a {
         display: none;
+    }
+    section {
+        width: 50%;
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    .menu {
+        display: inline-block;
     }
 }
 
-@media screen and (min-width: 800px) {
-    .column {
-        flex: 25%;
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+    main {
+        flex-wrap: wrap;
+    }
+    .menu {
+        display: inline-block;
     }
 }

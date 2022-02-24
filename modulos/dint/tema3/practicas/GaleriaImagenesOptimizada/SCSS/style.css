@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.main-container {
+  background-color: #eeeeee;
+}
+
+header {
+  background-color: #222233;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titulo {
+  width: 70%;
+}
+
+.titulo h2 {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo,
+.titulo,
+.menu {
+  color: #eeeeee;
+}
+
+i {
+  color: #eeeeee;
+  font-size: 40px;
+}
+
+.fas.fa-bars {
+  display: none;
+}
+
+.menu li {
+  display: inline-block;
+  list-style: none;
+  color: #eeeeee;
+  margin: 5px;
+}
+
+.menu li:hover {
+  -webkit-text-decoration-line: overline;
+          text-decoration-line: overline;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #eeeeee;
+  margin: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+footer {
+  background-color: #222233;
+  color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-family: "Roboto Slab", serif;
+}
+
+@media (max-width: 800px) {
+  nav ul li a {
+    display: none;
+  }
+  section {
+    width: 50%;
+  }
+  main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .fas.fa-bars {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+  section {
+    width: 100%;
+  }
+  main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .fas.fa-bars {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

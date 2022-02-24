@@ -1,0 +1,111 @@
+body {
+  background-color: black;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  background-color: rebeccapurple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 150px;
+}
+
+.logo {
+  background-color: green;
+}
+
+nav {
+  background-color: brown;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+}
+
+nav li :hover {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+}
+
+nav li :hover {
+  background-color: white;
+  color: crimson;
+}
+
+nav ul a {
+  color: seagreen;
+}
+
+.cuerpo {
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section article {
+  background-color: aqua;
+}
+
+aside {
+  background-color: mediumaquamarine;
+  width: 300px;
+  max-width: 300px;
+  padding: 1.5rem;
+}
+
+aside img {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: peru;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,10 +1,98 @@
-//archivos sccss
-@import "variables";
-@import "_colores.scss";
-@import "fuentes";
+@import "./colores";
+@import "./fuentes";
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+// header {
+//     display: flex;
+//     justify-content: center;
+//     background-color: #222233;
+//     padding: 20px;
+//     color: #eeeeee;
+// }
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    width: 100%;
+    background-color: $primary-color;
+    box-shadow: 0 0 15px rgba(24, 24, 24, 0.438);
+    color: $secundary-color;
+    margin: 0;
+    // padding: 0;
+}
+
+header a {
+    color: #eeeeee;
+}
+
+header i {
+    font-size: 50px;
+}
+
+header .header_container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-width: 70rem;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.header-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    max-width: 70rem;
+    width: 100%;
+    padding: 0.3rem var(--margen);
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.7rem 0;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+ul#ejm2 li a {
+    position: relative;
+    font-weight: bold;
+    color: $secundary-color;
+    margin: 0px 15px;
+}
+
+ul#ejm2 li a:after {
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: $azulMedio;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(20px);
+}
+
+ul#ejm2 li a:hover:after {
+    opacity: 1;
+    transform: translateY(15px)
+}
+
+.fas.fa-bars {
+    display: none;
 }
 
 html,
@@ -18,11 +106,6 @@ body {
     background-color: $secundary-color;
 }
 
-.main-container {
-    background-color: $secundary-color;
-}
-
-// Div de presentacion del repositorio
 .presentacion {
     display: flex;
     flex-direction: column;
@@ -31,7 +114,6 @@ body {
     margin: 2rem 0 3rem;
 }
 
-// Encabezados prsentacion
 .presentacion h1,
 .presentacion h2 {
     text-align: center;
@@ -43,7 +125,69 @@ body {
     margin-top: 1rem;
 }
 
-// main
+.box {
+    border: 2px solid;
+    width: 100%;
+    margin: 0.35rem;
+}
+
+.practicas img {
+    width: 100%;
+}
+
+.enlaces_interes img {
+    width: 100%;
+}
+
+.teoria img {
+    width: 100%;
+}
+
+.practicas .box {
+    width: 20%;
+}
+
+.teoria .box {
+    width: 20%;
+}
+
+.enlaces_interes .box {
+    width: 20%;
+}
+
+.titulo_practica {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo_teoria {
+    width: 100%;
+    text-align: center;
+}
+
+.titulo_enlaces_interes {
+    width: 100%;
+    text-align: center;
+}
+
+.practicas {}
+
+.practicas img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+.enlaces_interes img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.teoria img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 body main {
     flex: 1 0 auto;
 }
@@ -58,97 +202,35 @@ main {
 
 main p {
     max-width: 70ch;
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    // font-size: clamp(1rem, 1.2vw, 1.2rem);
     line-height: 1.5;
     color: $secundary-color;
 }
 
+.main-container {
+    background-color: $secundary-color;
+}
+
 // temario
-.temario {
+.practicas {
     display: flex;
     padding: 0.5rem;
-}
-
-.tema1 {
-    // background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
-    width: auto;
-    padding-bottom: 100%;
-    overflow: hidden;
-}
-
-.tema2 {
-    // background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
-    width: auto;
-    padding-bottom: 100%;
-    overflow: hidden;
-}
-
-.tema3 {
-    // background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
-    width: auto;
-    padding-bottom: 100%;
-    overflow: hidden;
-}
-
-.tema4 {
-    // background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
-    width: auto;
-    padding-bottom: 100%;
-    overflow: hidden;
-}
-
-.tema5 {
-    // background: url(../modulos/dint/img/revision_entregables_planificacion_proyecto_web.webp);
-    width: auto;
-    padding-bottom: 100%;
-    overflow: hidden;
-}
-
-header {
-    box-sizing: border-box;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 0.3rem;
-    width: 100%;
-    background-color: $primary-color;
-    box-shadow: 0 0 15px rgba(24, 24, 24, 0.438);
-    color: $secundary-color;
-    margin: 0;
-    padding: 0;
 }
 
-header a {
-    color: $secundary-color;
-}
-
-// icono
-header i {
-    font-size: 50px;
-}
-
-.fas.fa-bars {
-    display: none;
-}
-
-header .header_container {
-    box-sizing: border-box;
+.enlaces_interes {
     display: flex;
-    align-items: center;
-    max-width: 70rem;
-    width: 100%;
-    padding: 0.3rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-header .logo {}
-
-// header nav {
-//     flex: 1;
-//     display: flex;
-//     justify-content: flex-end;
-//     margin: 0.7rem 0;
-// }
-.menu li {
-    display: inline;
+.teoria {
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 //fuente para encabezados
@@ -199,8 +281,16 @@ footer .footer_container p {
     nav ul {
         display: none;
     }
-    section {
-        width: 50%;
+    .practicas .box {
+        width: 45%;
+    }
+    .practicas {
+        // width: 100%;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .practicas {
+        // justify-content: flex-start;
     }
     main {
         -ms-flex-wrap: wrap;
@@ -218,13 +308,18 @@ footer .footer_container p {
     nav ul {
         display: none;
     }
-    section {
+    .practicas .box {
         width: 100%;
     }
-    main {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
+    // .practicas {
+    //     width: 100%;
+    //     -ms-flex-wrap: wrap;
+    //     flex-wrap: wrap;
+    // }
+    // main {
+    //     -ms-flex-wrap: wrap;
+    //     flex-wrap: wrap;
+    // }
     .fas.fa-bars {
         display: contents;
     }
