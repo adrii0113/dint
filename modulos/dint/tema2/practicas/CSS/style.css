@@ -1,300 +1,221 @@
 * {
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-    width: 850px;
-    background-color: #f0f0f0;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    margin: 0 auto;
-    padding: 0.5rem;
+    font-family: Roboto, Arial;
+    font-size: 0.8em;
+    color: #666;
+    overflow-y: hidden;
+    /* background-color: #444; */
 }
 
-header {
-    background-color: #216a93;
+.icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+    /* justify-content: center; */
 }
 
-#logo .material-icons {
-    font-size: 3rem;
-    color: #E9ECF2;
+.icon.rain {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Frain_s_cloudy.png?v=1588942692675");
 }
 
-header h1 {
-    font-size: 1.8rem;
-    font-family: "Open Sans", sans-serif;
-    color: #E9ECF2;
+.icon.sunny {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fsunny.png?v=1588942701577");
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.icon.pc {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fpartly_cloudy.png?v=1588942697934");
 }
 
-nav ul li {
-    display: inline;
+.icon.sshowers {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Frain_s_cloudy.png?v=1588942692675");
 }
 
-nav ul li a {
-    font-family: "Bitter", serif;
-    color: #E9ECF2;
-    text-decoration: none;
-    padding: 0.2rem;
+.icon.cloudy {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fcloudy.png?v=1588942708821");
 }
 
-#menuMovil {
-    display: none;
+.icon.thunder {
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fthunderstorms.png?v=1588942705076");
 }
 
-main {
-    border: 0.2px solid rgba(150, 150, 150, 0.8);
-    background-color: white;
-    padding: 1rem;
-}
-
-#ciudad h2 {
-    font-size: 3rem;
-    font-family: "Courier New", Courier, monospace;
-    color: #141414;
-}
-
-#informacion {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-#tiempo {
-    display: flex;
-    flex: 2;
-    align-items: center;
-}
-
-#tiempo img {
-    height: 6rem;
-    margin: auto 0px;
-}
-
-#tiempo p {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 3rem;
-    margin-left: 1rem;
-    color: #141414;
-}
-
-#info {
-    flex: 2;
-}
-
-#info p {
-    font-size: 1.3rem;
-    line-height: 0.5rem;
-}
-
-#desgloseTiempo {
-    display: flex;
-    justify-content: space-between;
-}
-
-.dias {
-    flex: 1;
-    padding: 1rem;
-}
-
-.dias .convesiones {
-    display: flex;
-    justify-content: space-around;
-}
-
-.dias img {
-    margin: auto 0px;
-}
-
-.dias p {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-    color: #141414;
-}
-
-#farhenint p,
-#celsius p {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 1rem;
-    font-weight: 100;
-}
-
-#polen p {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 1rem;
-    font-weight: 100;
-    color: #141414;
-}
-
-footer {
-    background-color: #216a93;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-footer section p {
-    font-family: "Bitter", serif;
-    color: #E9ECF2;
-    font-size: 1rem;
+.weather-forecast {
+    padding: 10px 10px 0 10px;
+    display: inline-block;
+    background: #666;
+    color: #fff;
     text-align: center;
 }
 
-@media (max-width: 360px) {
+.location {
+    font-size: 3em;
+    color: #444;
+}
+
+.current {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.current .visual {
+    width: 50%;
+    float: left;
+}
+
+.current .description {
+    width: 50%;
+    float: left;
+}
+
+.visual .icon {
+    width: 64px;
+    height: 64px;
+}
+
+.temp {
+    font-size: 2.5em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.scale {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 6px;
+    color: #888;
+}
+
+.seven-day div {
+    vertical-align: middle;
+}
+
+.seven-day-fc {
+    margin: 0 -11px -1px -11px;
+    padding: 10px;
+}
+
+.seven-day-fc div {
+    display: inline-block;
+}
+
+.seven-day-fc .date {
+    font-weight: bold;
+    color: #444;
+}
+
+.seven-day-fc .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.seven-day-fc .seven-day-temp {
+    text-align: center;
+}
+
+.seven-day-fc .temp-high {
+    color: #444;
+}
+
+.seven-day-fc .temp-low {
+    color: #888;
+}
+
+.seven-day-fc .temp-low,
+.seven-day-fc .temp-high {
+    display: block;
+}
+
+.seven-day-fc .pcount {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .weather-forecast {
+        width: 100%;
+    }
+    .seven-day-fc {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .seven-day-fc:last-of-type {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .seven-day-fc .date {
+        width: 30%;
+    }
+    .seven-day-fc .seven-day-temp {
+        width: 30%;
+    }
+    .seven-day-fc .pcount {
+        width: 16%;
+    }
+}
+
+@media (min-width: 601px) {
     body {
+        font-size: 1em;
+    }
+    .weather-forecast {
         width: 100%;
-        padding: 0.2rem;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     }
-    #logo .material-icons {
-        font-size: 1.5rem;
+    .seven-day-fc {
+        display: inline-block;
+        width: 13.5%;
+        margin: 0;
+        border: none;
+        font-size: 0.8em;
     }
-    header h1 {
-        font-size: 1rem;
-        margin-left: 5%;
-    }
-    nav ul {
-        display: none;
-    }
-    #menuMovil {
+    .seven-day-fc div {
         display: block;
-        color: #E9ECF2;
-    }
-    main {
-        border: 0px;
-        width: 100%;
-        border-radius: 0px;
-        background-color: #f0f0f0;
-        padding: 0.5rem;
-        margin: 0.5rem;
-    }
-    #ciudad h2 {
-        font-size: 2.5rem;
-    }
-    #tiempo {
-        align-items: center;
-        margin-right: 1rem;
-    }
-    #informacion #tiempo img {
-        height: 4rem;
-    }
-    #informacion #tiempo p {
-        font-size: 1.5rem;
-    }
-    #informacion #info p {
-        font-size: 0.8rem;
-        line-height: 0.3rem;
-    }
-    #desgloseTiempo {
-        display: flex;
-        flex-direction: column;
-    }
-    .dias {
-        display: flex;
-        justify-content: space-between;
-        border-top: 0.2px solid rgba(150, 150, 150, 0.8);
-        align-items: center;
-    }
-    .dias p {
-        width: 25%;
-        text-align: left;
-    }
-    .dias .convesiones {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    #farhenint p {
-        margin-bottom: 0.1rem;
-    }
-    footer {
-        flex-direction: column;
-    }
-    footer section p {
-        font-size: 0.8rem;
         text-align: center;
     }
+    .seven-day-fc .date {
+        text-align: center;
+    }
+    .seven-day-fc .temp-low,
+    .seven-day-fc .temp-high {
+        display: inline;
+    }
+    .seven-day-fc .seven-day-temp {
+        font-size: 1.25em;
+    }
+    .seven-day-fc .icon {
+        width: 64px;
+        height: 64px;
+    }
 }
 
-@media (min-width: 360px) and (max-width: 600px) {
+@media (min-width: 360px) {
     body {
-        width: 100%;
-        padding: 0.2rem;
+        font-size: 1.0em;
     }
-    #logo .material-icons {
-        font-size: 2rem;
+}
+
+@media (min-width: 500px) {
+    .seven-day-fc .temp-low,
+    .seven-day-fc .temp-high {
+        display: inline-block;
+        width: 45%;
     }
-    header h1 {
-        font-size: 1.5rem;
+    .seven-day-fc .seven-day-temp {
         margin-left: 5%;
     }
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    #menuMovil {
-        display: none;
-    }
-    main {
-        border: 0px;
-        width: 100%;
-        border-radius: 0px;
-        background-color: #f0f0f0;
-        padding: 0.5rem;
-        margin: 0.5rem;
-    }
-    #ciudad h2 {
-        font-size: 3rem;
-    }
-    #tiempo {
-        align-items: center;
-        margin-right: 1rem;
-    }
-    #informacion #tiempo img {
-        height: 5rem;
-    }
-    #informacion #tiempo p {
-        font-size: 2rem;
-    }
-    #informacion #info p {
-        font-size: 0.9rem;
-        line-height: 0.3rem;
-    }
-    #desgloseTiempo {
-        display: flex;
-        flex-direction: column;
-    }
-    .dias {
-        display: flex;
-        justify-content: space-between;
-        border-top: 0.2px solid rgba(150, 150, 150, 0.8);
-        align-items: center;
-    }
-    .dias p {
-        width: 25%;
-        text-align: left;
-    }
-    .dias .convesiones {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    #farhenint p {
-        margin-right: 1rem;
-    }
-    footer {
-        flex-direction: row;
+    .seven-day-fc .icon {
+        width: 64px;
+        height: 64px;
     }
 }
 
-
-/*# sourceMappingURL=style.css.map */
+@media (min-width: 700px) {
+    .weather-forecast {
+        width: 700px;
+    }
+}
