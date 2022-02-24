@@ -8,8 +8,6 @@
 }
 
 header {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,8 +17,6 @@ header {
   padding: 0.3rem;
   width: 100%;
   background-color: #222233;
-  -webkit-box-shadow: 0 0 15px rgba(24, 24, 24, 0.438);
-          box-shadow: 0 0 15px rgba(24, 24, 24, 0.438);
   color: #eeeeee;
   margin: 0;
 }
@@ -228,7 +224,6 @@ body main {
 }
 
 main {
-  max-width: 70rem;
   color: #eeeeee;
   background-color: #6b89e0;
   width: 100%;
@@ -237,7 +232,6 @@ main {
 
 main p {
   max-width: 70ch;
-  line-height: 1.5;
   color: #eeeeee;
 }
 
